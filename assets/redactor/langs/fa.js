@@ -39,6 +39,7 @@
         "heading4": "عنوان ۴",
         "heading5": "عنوان ۵",
         "heading6": "عنوان ۶",
+        "small": "کوچک",
         "filename": "نام",
         "optional": "اختیاری",
         "unorderedlist": "فهرست نامرتب",

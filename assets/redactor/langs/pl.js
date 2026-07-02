@@ -39,6 +39,7 @@
         "heading4": "Nagłówek 4",
         "heading5": "Nagłówek 5",
         "heading6": "Nagłówek 6",
+        "small": "Małe",
         "filename": "Nazwa",
         "optional": "opcjonalnie",
         "unorderedlist": "Lista punktowana",

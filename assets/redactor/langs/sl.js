@@ -39,6 +39,7 @@
         "heading4": "Naslov 4",
         "heading5": "Naslov 5",
         "heading6": "Naslov 6",
+        "small": "Majhno",
         "filename": "Ime",
         "optional": "izbirno",
         "unorderedlist": "Označen seznam",

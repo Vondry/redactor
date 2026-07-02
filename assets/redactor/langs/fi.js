@@ -39,6 +39,7 @@
         "heading4": "Otsikko 4",
         "heading5": "Otsikko 5",
         "heading6": "Otsikko 6",
+        "small": "Pieni",
         "filename": "Nimi (valinnainen)",
         "optional": "valinnainen",
         "unorderedlist": "Luettelo luettelomerkein",

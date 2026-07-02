@@ -39,6 +39,7 @@
         "heading4": "Cabecera 4",
         "heading5": "Cabecera 5",
         "heading6": "Cabecera 6",
+        "small": "Pequeño",
         "filename": "Nombre",
         "optional": "Opcional",
         "unorderedlist": "Lista sin orden",

@@ -39,6 +39,7 @@
         "heading4": "Titel 4",
         "heading5": "Titel 5",
         "heading6": "Titel 6",
+        "small": "Liten",
         "filename": "Namn",
         "optional": "valfritt",
         "unorderedlist": "Osorterad lista",

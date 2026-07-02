@@ -39,6 +39,7 @@
         "heading4": "Heading 4",
         "heading5": "Heading 5",
         "heading6": "Heading 6",
+        "small": "Small",
         "filename": "Name",
         "optional": "optional",
         "unorderedlist": "Unordered List",

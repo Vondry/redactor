@@ -39,6 +39,7 @@
         "heading4": "Nadpis 4",
         "heading5": "Nadpis 5",
         "heading6": "Nadpis 6",
+        "small": "Malé písmo",
         "filename": "Meno",
         "optional": "voliteľné",
         "unorderedlist": "Nezoradený zoznam",

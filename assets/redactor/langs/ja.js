@@ -39,6 +39,7 @@
         "heading4": "見出し 4",
         "heading5": "見出し 5",
         "heading6": "見出し 6",
+        "small": "小さい",
         "filename": "名前",
         "optional": "任意",
         "unorderedlist": "箇条書きリスト",

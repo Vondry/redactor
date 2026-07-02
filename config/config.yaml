@@ -39,7 +39,10 @@ default:
   # https://imperavi.com/redactor/docs/settings/formatting/#s-formattingadd
   formattingAdd:
     small:
-      title: 'Small'
+      # `## key ##` is Redactor's i18n placeholder: it's replaced at runtime with
+      # the `small` entry from the active langs/<locale>.js. Use a plain string
+      # here (e.g. 'Small') only if you want the same label in every language.
+      title: '## small ##'
       api: 'module.block.format'
       args:
         tag: 'small'

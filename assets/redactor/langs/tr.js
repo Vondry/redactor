@@ -39,6 +39,7 @@
         "heading4": "Başlık 4",
         "heading5": "Başlık 5",
         "heading6": "Başlık 6",
+        "small": "Küçük",
         "filename": "İsim",
         "optional": "opsiyonel",
         "unorderedlist": "Sırasız Liste",

@@ -39,6 +39,7 @@
         "heading4": "Naslov 4",
         "heading5": "Naslov 5",
         "heading6": "Naslov 6",
+        "small": "Malo",
         "filename": "Naziv",
         "optional": "opcionalno",
         "unorderedlist": "Lista s oznakama",

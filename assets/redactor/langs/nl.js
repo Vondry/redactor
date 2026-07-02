@@ -39,6 +39,7 @@
         "heading4": "Koptekst 4",
         "heading5": "Koptekst 5",
         "heading6": "Koptekst 6",
+        "small": "Klein",
         "filename": "Bestandsnaam",
         "optional": "Optioneel",
         "unorderedlist": "Ongeordende lijst",

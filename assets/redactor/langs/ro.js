@@ -39,6 +39,7 @@
         "heading4": "Titlu 4",
         "heading5": "Titlu 5",
         "heading6": "Titlu 6",
+        "small": "Mic",
         "filename": "Nume",
         "optional": "opțional",
         "unorderedlist": "Listă neordonată",

@@ -39,6 +39,7 @@
         "heading4": "標題 4",
         "heading5": "標題 5",
         "heading6": "標題 6",
+        "small": "小型字",
         "filename": "名稱",
         "optional": "選填",
         "unorderedlist": "項目符號清單",

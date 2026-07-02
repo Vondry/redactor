@@ -39,6 +39,7 @@
         "heading4": "제목 4",
         "heading5": "제목 5",
         "heading6": "제목 6",
+        "small": "작게",
         "filename": "이름",
         "optional": "선택 사항",
         "unorderedlist": "글머리 기호 목록",

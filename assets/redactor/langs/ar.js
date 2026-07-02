@@ -39,6 +39,7 @@
         "heading4": "عنوان 4",
         "heading5": "عنوان 5",
         "heading6": "عنوان 6",
+        "small": "صغير",
         "filename": "الاسم",
         "optional": "اختياري",
         "unorderedlist": "قائمة غير مرتبة",

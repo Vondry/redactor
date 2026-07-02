@@ -39,6 +39,7 @@
         "heading4": "כותרת 4",
         "heading5": "כותרת 5",
         "heading6": "כותרת 6",
+        "small": "קטן",
         "filename": "שם",
         "optional": "אופציונלי",
         "unorderedlist": "רשימה לא ממוספרת",

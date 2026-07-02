@@ -39,6 +39,7 @@
         "heading4": "Überschrift 4",
         "heading5": "Überschrift 5",
         "heading6": "Überschrift 6",
+        "small": "Klein",
         "filename": "Dateiname",
         "optional": "Optional",
         "unorderedlist": "Aufzählung",

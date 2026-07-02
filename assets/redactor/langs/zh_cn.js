@@ -39,6 +39,7 @@
         "heading4": "标题 4",
         "heading5": "标题 5",
         "heading6": "标题 6",
+        "small": "小号字",
         "filename": "名称",
         "optional": "可选",
         "unorderedlist": "无序列表",

@@ -65,9 +65,11 @@ class TwigExtension extends AbstractExtension
 
         // Then the UI language file matching the resolved locale (see
         // RedactorConfig::resolveLocale), so the toolbar is localized without the
-        // user having to add it to `includes` manually. English is built into
-        // redactor.min.js, and unsupported locales are skipped (no such file), in
-        // which case Redactor falls back to English on its own.
+        // user having to add it to `includes` manually. This includes English:
+        // redactor.min.js ships a built-in `en` table, but langs/en.js overrides it
+        // with our normalized set (e.g. the `small` format label), so we load it too.
+        // Unsupported locales are skipped (no such file), in which case Redactor
+        // falls back to its built-in English on its own.
         $output .= $this->redactorLangInclude();
 
         // Next, if there are extra inludes configured, we add them here
@@ -90,14 +92,15 @@ class TwigExtension extends AbstractExtension
 
     /**
      * A `<script>` tag for the Redactor UI language file matching the configured
-     * locale, or an empty string when it isn't needed/available (English, or a
-     * locale Redactor ships no translation for).
+     * locale, or an empty string when it isn't available (a locale we ship no
+     * translation file for). English is included on purpose: langs/en.js overrides
+     * redactor.min.js' built-in `en` table with our normalized labels.
      */
     private function redactorLangInclude(): string
     {
         $lang = $this->redactorConfig->getConfig()['lang'] ?? 'en';
 
-        if (! is_string($lang) || $lang === '' || $lang === 'en') {
+        if (! is_string($lang) || $lang === '') {
             return '';
         }
 

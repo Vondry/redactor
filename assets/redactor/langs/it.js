@@ -39,6 +39,7 @@
         "heading4": "Titolo 4",
         "heading5": "Titolo 5",
         "heading6": "Titolo 6",
+        "small": "Piccolo",
         "filename": "Nome",
         "optional": "opzionale",
         "unorderedlist": "Lista non ordinata",

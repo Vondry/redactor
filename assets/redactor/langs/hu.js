@@ -39,6 +39,7 @@
         "heading4": "Címsor 4",
         "heading5": "Címsor 5",
         "heading6": "Címsor 6",
+        "small": "Kicsi",
         "filename": "Név",
         "optional": "választható",
         "unorderedlist": "Rendezett lista",

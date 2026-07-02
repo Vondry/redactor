@@ -39,6 +39,7 @@
         "heading4": "Cabeçalho 4",
         "heading5": "Cabeçalho 5",
         "heading6": "Cabeçalho 6",
+        "small": "Pequeno",
         "filename": "Nome",
         "optional": "Opcional",
         "unorderedlist": "Lista não ordenada",

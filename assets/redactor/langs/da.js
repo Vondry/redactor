@@ -39,6 +39,7 @@
         "heading4": "Overskrift 4",
         "heading5": "Overskrift 5",
         "heading6": "Overskrift 6",
+        "small": "Lille",
         "filename": "Navn",
         "optional": "valgfri",
         "unorderedlist": "Usorteret liste",
