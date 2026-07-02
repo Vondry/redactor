@@ -1,7 +1,7 @@
 (function($R)
 {
     $R.lang['da'] = {
-        "format": "Format",
+        "format": "Formatering",
         "image": "Billede",
         "file": "Fil",
         "link": "link",
@@ -11,12 +11,12 @@
         "underline": "Understreg",
         "superscript": "Hævet",
         "subscript": "Sænket",
-        "bold-abbr": "B",
-        "italic-abbr": "I",
-        "deleted-abbr": "S",
-        "underline-abbr": "U",
-        "superscript-abbr": "Sup",
-        "subscript-abbr": "Sub",
+        "bold-abbr": "F",
+        "italic-abbr": "K",
+        "deleted-abbr": "G",
+        "underline-abbr": "U.",
+        "superscript-abbr": "Hævet",
+        "subscript-abbr": "Sænket",
         "lists": "Lister",
         "link-insert": "Indsæt link",
         "link-edit": "Redigér link",
@@ -46,19 +46,96 @@
         "outdent": "Formindsk indrykning",
         "indent": "Forøg indrykning",
         "horizontalrule": "Vandret linje",
-        "upload": "Upload",
+        "upload": "Overfør",
         "upload-label": "Slip filer her eller klik for at uploade",
-        "upload-change-label": "Drop a new image to change",
+        "upload-change-label": "Slip et nyt billede for at ændre",
         "accessibility-help-label": "Tekst editor",
-        "caption": "Caption",
+        "caption": "Billedtekst",
         "bulletslist": "Punktliste",
         "numberslist": "Nummereret liste",
-        "image-position": "Position",
+        "image-position": "Placering",
         "none": "Ingen",
         "left": "Venstre",
         "right": "Højre",
-        "center": "Center",
+        "center": "Centreret",
         "undo": "Fortryd",
-        "redo": "Annullér fortryd"
+        "redo": "Annullér fortryd",
+
+        /* Alignment plugin */
+        "align": "Juster",
+        "align-left": "Venstrejuster",
+        "align-center": "Centrer",
+        "align-right": "Højrejuster",
+        "align-justify": "Lige margener",
+
+        /* Clips plugin */
+        "clips": "Klip",
+        "clips-select": "Vælg et klip",
+
+        /* Counter plugin */
+        "words": "ord",
+        "chars": "tegn",
+
+        /* Filemanager/Imagemanager plugin */
+        "choose": "Vælg",
+
+        /* Font color plugin */
+        "fontcolor": "Tekstfarve",
+        "highlight": "Fremhævning",
+
+        /* Font family plugin */
+        "fontfamily": "Skrifttype",
+        "remove-font-family": "Fjern skrifttype",
+
+        /* Font size plugin */
+        "size": "Størrelse",
+        "remove-size": "Fjern skriftstørrelse",
+
+        /* Fullscreen plugin */
+        "fullscreen": "Fuld skærm",
+
+        /* Inlinestyle plugin */
+        "style": "Typografi",
+        "marked": "Markeret",
+        "shortcut": "Genvej",
+
+        /* Properties plugin */
+        "properties": "Egenskaber",
+        "id": "ID",
+        "classname": "Klasse",
+
+        /* Specialchars plugin */
+        "specialchars": "Specialtegn",
+
+        /* Table plugin */
+        "table": "Tabel",
+        "insert-table": "Indsæt tabel",
+        "insert-row-above": "Indsæt række over",
+        "insert-row-below": "Indsæt række under",
+        "insert-column-left": "Indsæt kolonne til venstre",
+        "insert-column-right": "Indsæt kolonne til højre",
+        "add-head": "Tilføj tabelhoved",
+        "delete-head": "Slet tabelhoved",
+        "delete-column": "Slet kolonne",
+        "delete-row": "Slet række",
+        "delete-table": "Slet tabel",
+
+        /* Textdirection plugin */
+        "change-text-direction": "Tekstretning",
+        "left-to-right": "Venstre mod højre",
+        "right-to-left": "Højre mod venstre",
+
+        /* Variable plugin */
+        "change": "Skift",
+        "variable": "Variabel",
+        "variable-select": "Vælg en variabel",
+
+        /* Video plugin */
+        "video": "Video",
+        "video-html-code": "Videoindlejringskode eller YouTube/Vimeo-link",
+
+        /* Widget plugin */
+        "widget": "Widget",
+        "widget-html-code": "Widget HTML-kode"
     };
 })(Redactor);

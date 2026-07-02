@@ -9,14 +9,14 @@
         "italic": "Kursivointi",
         "deleted": "Poistettu",
         "underline": "Alleviivaa",
-        "superscript": "Superscript",
-        "subscript": "Subscript",
-        "bold-abbr": "B",
-        "italic-abbr": "I",
-        "deleted-abbr": "S",
-        "underline-abbr": "U",
-        "superscript-abbr": "Sup",
-        "subscript-abbr": "Sub",
+        "superscript": "Yläindeksi",
+        "subscript": "Alaindeksi",
+        "bold-abbr": "L",
+        "italic-abbr": "K",
+        "deleted-abbr": "Y",
+        "underline-abbr": "A",
+        "superscript-abbr": "Ylä",
+        "subscript-abbr": "Ala",
         "lists": "Luettelot",
         "link-insert": "Lisää linkki",
         "link-edit": "Muokkaa linkkiä",
@@ -29,7 +29,7 @@
         "delete": "Poista",
         "text": "Teksti",
         "edit": "Muokata",
-        "title": "Title",
+        "title": "Otsikko",
         "paragraph": "Normaaliteksti",
         "quote": "Lainaus",
         "code": "Koodi",
@@ -46,19 +46,96 @@
         "outdent": "Vähennä sisennystä",
         "indent": "Lisää sisennystä",
         "horizontalrule": "Viiva",
-        "upload": "Upload",
-        "upload-label": "Drop files here or click to upload",
-        "upload-change-label": "Drop a new image to change",
-        "accessibility-help-label": "Rich text editor",
-        "caption": "Caption",
-        "bulletslist": "Bullets",
-        "numberslist": "Numbers",
-        "image-position": "Position",
-        "none": "None",
-        "left": "Left",
-        "right": "Right",
-        "center": "Center",
-        "undo": "Undo",
-        "redo": "Redo"
+        "upload": "Lataa",
+        "upload-label": "Pudota tiedostot tähän tai napsauta ladataksesi",
+        "upload-change-label": "Pudota uusi kuva vaihtaaksesi",
+        "accessibility-help-label": "Rikastekstieditori",
+        "caption": "Kuvateksti",
+        "bulletslist": "Luettelomerkit",
+        "numberslist": "Numerot",
+        "image-position": "Sijainti",
+        "none": "Ei mitään",
+        "left": "Vasen",
+        "right": "Oikea",
+        "center": "Keskellä",
+        "undo": "Kumoa",
+        "redo": "Tee uudelleen",
+
+        /* Alignment plugin */
+        "align": "Tasaa",
+        "align-left": "Tasaa vasemmalle",
+        "align-center": "Keskitä",
+        "align-right": "Tasaa oikealle",
+        "align-justify": "Tasaa molemmat reunat",
+
+        /* Clips plugin */
+        "clips": "Leikkeet",
+        "clips-select": "Valitse leike",
+
+        /* Counter plugin */
+        "words": "sanaa",
+        "chars": "merkkiä",
+
+        /* Filemanager/Imagemanager plugin */
+        "choose": "Valitse",
+
+        /* Font color plugin */
+        "fontcolor": "Tekstin väri",
+        "highlight": "Korostus",
+
+        /* Font family plugin */
+        "fontfamily": "Fontti",
+        "remove-font-family": "Poista fontti",
+
+        /* Font size plugin */
+        "size": "Koko",
+        "remove-size": "Poista fonttikoko",
+
+        /* Fullscreen plugin */
+        "fullscreen": "Koko näyttö",
+
+        /* Inlinestyle plugin */
+        "style": "Tyyli",
+        "marked": "Merkitty",
+        "shortcut": "Pikanäppäin",
+
+        /* Properties plugin */
+        "properties": "Ominaisuudet",
+        "id": "ID",
+        "classname": "Luokka",
+
+        /* Specialchars plugin */
+        "specialchars": "Erikoismerkit",
+
+        /* Table plugin */
+        "table": "Taulukko",
+        "insert-table": "Lisää taulukko",
+        "insert-row-above": "Lisää rivi yläpuolelle",
+        "insert-row-below": "Lisää rivi alapuolelle",
+        "insert-column-left": "Lisää sarake vasemmalle",
+        "insert-column-right": "Lisää sarake oikealle",
+        "add-head": "Lisää otsake",
+        "delete-head": "Poista otsake",
+        "delete-column": "Poista sarake",
+        "delete-row": "Poista rivi",
+        "delete-table": "Poista taulukko",
+
+        /* Textdirection plugin */
+        "change-text-direction": "Tekstin suunta",
+        "left-to-right": "Vasemmalta oikealle",
+        "right-to-left": "Oikealta vasemmalle",
+
+        /* Variable plugin */
+        "change": "Muuta",
+        "variable": "Muuttuja",
+        "variable-select": "Valitse muuttuja",
+
+        /* Video plugin */
+        "video": "Video",
+        "video-html-code": "Videon upotuskoodi tai YouTube/Vimeo-linkki",
+
+        /* Widget plugin */
+        "widget": "Widget",
+        "widget-html-code": "Widgetin HTML-koodi"
     };
 })(Redactor);

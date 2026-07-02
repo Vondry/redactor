@@ -11,12 +11,12 @@
         "underline": "Podčiarknuté",
         "superscript": "Horný index",
         "subscript": "Spodný index",
-        "bold-abbr": "B",
-        "italic-abbr": "I",
-        "deleted-abbr": "S",
-        "underline-abbr": "U",
-        "superscript-abbr": "Sup",
-        "subscript-abbr": "Sub",
+        "bold-abbr": "T",
+        "italic-abbr": "K",
+        "deleted-abbr": "P",
+        "underline-abbr": "Po",
+        "superscript-abbr": "Hor.",
+        "subscript-abbr": "Dol.",
         "lists": "Zoznam",
         "link-insert": "Vložiť odkaz",
         "link-edit": "Upraviť odkaz",
@@ -27,7 +27,7 @@
         "insert": "Vložiť",
         "save": "Uložiť",
         "delete": "Vymazať",
-        "text": "Text",
+        "text": "Textový obsah",
         "edit": "Upraviť",
         "title": "Názov",
         "paragraph": "Odsek",
@@ -48,8 +48,8 @@
         "horizontalrule": "Linka",
         "upload": "Nahrať",
         "upload-label": "Presuňte sem súbory alebo kliknite pre výber",
-        "upload-change-label": "Drop a new image to change",
-        "accessibility-help-label": "Rich text editor",
+        "upload-change-label": "Presuňte sem nový obrázok na zmenu",
+        "accessibility-help-label": "Editor formátovaného textu",
         "caption": "Titulok",
         "bulletslist": "odrážkový zoznam",
         "numberslist": "číslovaný zoznam",
@@ -59,6 +59,83 @@
         "right": "Vpravo",
         "center": "Na stred",
         "undo": "Späť",
-        "redo": "Obnoviť"
+        "redo": "Obnoviť",
+
+        /* Alignment plugin */
+        "align": "Zarovnať",
+        "align-left": "Zarovnať vľavo",
+        "align-center": "Zarovnať na stred",
+        "align-right": "Zarovnať vpravo",
+        "align-justify": "Zarovnať do bloku",
+
+        /* Clips plugin */
+        "clips": "Úryvky",
+        "clips-select": "Vyberte prosím úryvok",
+
+        /* Counter plugin */
+        "words": "slová",
+        "chars": "znaky",
+
+        /* Filemanager/Imagemanager plugin */
+        "choose": "Vybrať",
+
+        /* Font color plugin */
+        "fontcolor": "Farba textu",
+        "highlight": "Zvýraznenie",
+
+        /* Font family plugin */
+        "fontfamily": "Písmo",
+        "remove-font-family": "Odstrániť písmo",
+
+        /* Font size plugin */
+        "size": "Veľkosť",
+        "remove-size": "Odstrániť veľkosť písma",
+
+        /* Fullscreen plugin */
+        "fullscreen": "Celá obrazovka",
+
+        /* Inlinestyle plugin */
+        "style": "Štýl",
+        "marked": "Označené",
+        "shortcut": "Skratka",
+
+        /* Properties plugin */
+        "properties": "Vlastnosti",
+        "id": "ID",
+        "classname": "Trieda",
+
+        /* Specialchars plugin */
+        "specialchars": "Špeciálne znaky",
+
+        /* Table plugin */
+        "table": "Tabuľka",
+        "insert-table": "Vložiť tabuľku",
+        "insert-row-above": "Vložiť riadok nad",
+        "insert-row-below": "Vložiť riadok pod",
+        "insert-column-left": "Vložiť stĺpec vľavo",
+        "insert-column-right": "Vložiť stĺpec vpravo",
+        "add-head": "Pridať hlavičku",
+        "delete-head": "Odstrániť hlavičku",
+        "delete-column": "Odstrániť stĺpec",
+        "delete-row": "Odstrániť riadok",
+        "delete-table": "Odstrániť tabuľku",
+
+        /* Textdirection plugin */
+        "change-text-direction": "Smer textu",
+        "left-to-right": "Zľava doprava",
+        "right-to-left": "Sprava doľava",
+
+        /* Variable plugin */
+        "change": "Zmeniť",
+        "variable": "Premenná",
+        "variable-select": "Vyberte prosím premennú",
+
+        /* Video plugin */
+        "video": "Video",
+        "video-html-code": "Kód na vloženie videa alebo odkaz YouTube/Vimeo",
+
+        /* Widget plugin */
+        "widget": "Widget",
+        "widget-html-code": "HTML kód widgetu"
     };
 })(Redactor);

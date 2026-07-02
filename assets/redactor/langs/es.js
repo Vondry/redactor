@@ -9,14 +9,14 @@
         "italic": "Cursiva",
         "deleted": "Tachado",
         "underline": "Subrayado",
-        "superscript": "Superscript",
-        "subscript": "Subscript",
+        "superscript": "Superíndice",
+        "subscript": "Subíndice",
         "bold-abbr": "N",
         "italic-abbr": "C",
         "deleted-abbr": "T",
         "underline-abbr": "S",
-        "superscript-abbr": "Sup",
-        "subscript-abbr": "Sub",
+        "superscript-abbr": "Sup.",
+        "subscript-abbr": "Sub.",
         "lists": "Listas",
         "link-insert": "Insertar enlace",
         "link-edit": "Editar enlace",
@@ -46,19 +46,96 @@
         "outdent": "Quitar sangría",
         "indent": "Sangría",
         "horizontalrule": "Línea",
-        "upload": "Upload",
-        "upload-label": "Drop files here or click to upload",
-        "upload-change-label": "Drop a new image to change",
+        "upload": "Subir",
+        "upload-label": "Suelte archivos aquí o haga clic para subirlos",
+        "upload-change-label": "Suelte una nueva imagen para cambiarla",
         "accessibility-help-label": "Editor de texto enriquecido",
-        "caption": "Caption",
-        "bulletslist": "Bullets",
-        "numberslist": "Numbers",
-        "image-position": "Position",
-        "none": "None",
-        "left": "Left",
-        "right": "Right",
-        "center": "Center",
-        "undo": "Undo",
-        "redo": "Redo"
+        "caption": "Pie de foto",
+        "bulletslist": "Viñetas",
+        "numberslist": "Números",
+        "image-position": "Posición",
+        "none": "Ninguno",
+        "left": "Izquierda",
+        "right": "Derecha",
+        "center": "Centro",
+        "undo": "Deshacer",
+        "redo": "Rehacer",
+
+        /* Alignment plugin */
+        "align": "Alinear",
+        "align-left": "Alinear a la izquierda",
+        "align-center": "Alinear al centro",
+        "align-right": "Alinear a la derecha",
+        "align-justify": "Justificar",
+
+        /* Clips plugin */
+        "clips": "Fragmentos",
+        "clips-select": "Por favor, seleccione un fragmento",
+
+        /* Counter plugin */
+        "words": "palabras",
+        "chars": "caracteres",
+
+        /* Filemanager/Imagemanager plugin */
+        "choose": "Elegir",
+
+        /* Font color plugin */
+        "fontcolor": "Color del texto",
+        "highlight": "Resaltar",
+
+        /* Font family plugin */
+        "fontfamily": "Fuente",
+        "remove-font-family": "Quitar fuente",
+
+        /* Font size plugin */
+        "size": "Tamaño",
+        "remove-size": "Quitar tamaño de fuente",
+
+        /* Fullscreen plugin */
+        "fullscreen": "Pantalla completa",
+
+        /* Inlinestyle plugin */
+        "style": "Estilo",
+        "marked": "Marcado",
+        "shortcut": "Atajo",
+
+        /* Properties plugin */
+        "properties": "Propiedades",
+        "id": "ID",
+        "classname": "Clase",
+
+        /* Specialchars plugin */
+        "specialchars": "Caracteres especiales",
+
+        /* Table plugin */
+        "table": "Tabla",
+        "insert-table": "Insertar tabla",
+        "insert-row-above": "Insertar fila arriba",
+        "insert-row-below": "Insertar fila abajo",
+        "insert-column-left": "Insertar columna a la izquierda",
+        "insert-column-right": "Insertar columna a la derecha",
+        "add-head": "Añadir encabezado",
+        "delete-head": "Eliminar encabezado",
+        "delete-column": "Eliminar columna",
+        "delete-row": "Eliminar fila",
+        "delete-table": "Eliminar tabla",
+
+        /* Textdirection plugin */
+        "change-text-direction": "Dirección del texto",
+        "left-to-right": "De izquierda a derecha",
+        "right-to-left": "De derecha a izquierda",
+
+        /* Variable plugin */
+        "change": "Cambiar",
+        "variable": "Variable",
+        "variable-select": "Por favor, seleccione una variable",
+
+        /* Video plugin */
+        "video": "Vídeo",
+        "video-html-code": "Código de inserción de vídeo o enlace de YouTube/Vimeo",
+
+        /* Widget plugin */
+        "widget": "Widget",
+        "widget-html-code": "Código HTML del widget"
     };
 })(Redactor);

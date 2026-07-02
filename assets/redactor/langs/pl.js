@@ -4,19 +4,19 @@
         "format": "Formatuj",
         "image": "Obrazek",
         "file": "Plik",
-        "link": "Link",
+        "link": "Odnośnik",
         "bold": "Pogrubienie",
         "italic": "Kursywa",
         "deleted": "Przekreślenie",
         "underline": "Podkreślenie",
         "superscript": "Indeks górny",
         "subscript": "Indeks dolny",
-        "bold-abbr": "B",
-        "italic-abbr": "I",
-        "deleted-abbr": "S",
-        "underline-abbr": "U",
-        "superscript-abbr": "Sup",
-        "subscript-abbr": "Sub",
+        "bold-abbr": "P",
+        "italic-abbr": "K",
+        "deleted-abbr": "Prz.",
+        "underline-abbr": "Pod.",
+        "superscript-abbr": "Gór.",
+        "subscript-abbr": "Dol.",
         "lists": "Lista",
         "link-insert": "Wstaw link",
         "link-edit": "Edytuj link",
@@ -27,7 +27,7 @@
         "insert": "Wstaw",
         "save": "Zapisz",
         "delete": "Usuń",
-        "text": "Text",
+        "text": "Tekst",
         "edit": "Edytuj",
         "title": "Tytuł",
         "paragraph": "Zwykły tekst",
@@ -48,7 +48,7 @@
         "horizontalrule": "Linia pozioma",
         "upload": "Przekazać plik",
         "upload-label": "Upuść pliki tutaj lub kliknij, aby przesłać",
-        "upload-change-label": "Drop a new image to change",
+        "upload-change-label": "Upuść nowy obraz, aby zmienić",
         "accessibility-help-label": "Edytor tekstu",
         "caption": "Podpis",
         "bulletslist": "Kule",
@@ -59,6 +59,83 @@
         "right": "Prawa",
         "center": "Centrum",
         "undo": "Cofnij",
-        "redo": "Ponów"
+        "redo": "Ponów",
+
+        /* Alignment plugin */
+        "align": "Wyrównaj",
+        "align-left": "Wyrównaj do lewej",
+        "align-center": "Wyśrodkuj",
+        "align-right": "Wyrównaj do prawej",
+        "align-justify": "Wyjustuj",
+
+        /* Clips plugin */
+        "clips": "Wycinki",
+        "clips-select": "Wybierz wycinek",
+
+        /* Counter plugin */
+        "words": "słowa",
+        "chars": "znaki",
+
+        /* Filemanager/Imagemanager plugin */
+        "choose": "Wybierz",
+
+        /* Font color plugin */
+        "fontcolor": "Kolor tekstu",
+        "highlight": "Podświetlenie",
+
+        /* Font family plugin */
+        "fontfamily": "Czcionka",
+        "remove-font-family": "Usuń czcionkę",
+
+        /* Font size plugin */
+        "size": "Rozmiar",
+        "remove-size": "Usuń rozmiar czcionki",
+
+        /* Fullscreen plugin */
+        "fullscreen": "Pełny ekran",
+
+        /* Inlinestyle plugin */
+        "style": "Styl",
+        "marked": "Zaznaczone",
+        "shortcut": "Skrót",
+
+        /* Properties plugin */
+        "properties": "Właściwości",
+        "id": "ID",
+        "classname": "Klasa",
+
+        /* Specialchars plugin */
+        "specialchars": "Znaki specjalne",
+
+        /* Table plugin */
+        "table": "Tabela",
+        "insert-table": "Wstaw tabelę",
+        "insert-row-above": "Wstaw wiersz powyżej",
+        "insert-row-below": "Wstaw wiersz poniżej",
+        "insert-column-left": "Wstaw kolumnę z lewej",
+        "insert-column-right": "Wstaw kolumnę z prawej",
+        "add-head": "Dodaj nagłówek",
+        "delete-head": "Usuń nagłówek",
+        "delete-column": "Usuń kolumnę",
+        "delete-row": "Usuń wiersz",
+        "delete-table": "Usuń tabelę",
+
+        /* Textdirection plugin */
+        "change-text-direction": "Kierunek tekstu",
+        "left-to-right": "Od lewej do prawej",
+        "right-to-left": "Od prawej do lewej",
+
+        /* Variable plugin */
+        "change": "Zmień",
+        "variable": "Zmienna",
+        "variable-select": "Wybierz zmienną",
+
+        /* Video plugin */
+        "video": "Wideo",
+        "video-html-code": "Kod osadzenia wideo lub link YouTube/Vimeo",
+
+        /* Widget plugin */
+        "widget": "Widget",
+        "widget-html-code": "Kod HTML widgetu"
     };
 })(Redactor);

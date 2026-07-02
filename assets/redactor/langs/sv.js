@@ -1,7 +1,7 @@
 (function($R)
 {
     $R.lang['sv'] = {
-        "format": "Format",
+        "format": "Formatering",
         "image": "Bild",
         "file": "Fil",
         "link": "Länk",
@@ -11,12 +11,12 @@
         "underline": "Understruken",
         "superscript": "Upphöjd",
         "subscript": "Nedsänkt",
-        "bold-abbr": "B",
-        "italic-abbr": "I",
-        "deleted-abbr": "S",
-        "underline-abbr": "U",
-        "superscript-abbr": "Sup",
-        "subscript-abbr": "Sub",
+        "bold-abbr": "F",
+        "italic-abbr": "K",
+        "deleted-abbr": "G",
+        "underline-abbr": "U.",
+        "superscript-abbr": "Upph.",
+        "subscript-abbr": "Neds.",
         "lists": "Lista",
         "link-insert": "Infoga länk",
         "link-edit": "Redigera länk",
@@ -27,10 +27,10 @@
         "insert": "Infoga",
         "save": "Spara",
         "delete": "Radera",
-        "text": "Text",
+        "text": "Textinnehåll",
         "edit": "Redigera",
         "title": "Titel",
-        "paragraph": "Normal text",
+        "paragraph": "Brödtext",
         "quote": "Citat",
         "code": "Kod",
         "heading1": "Titel 1",
@@ -48,18 +48,64 @@
         "horizontalrule": "Linje",
         "upload": "Ladda upp",
         "upload-label": "Släpp filer här eller klicka för att ladda upp",
-        "upload-change-label": "Drop a new image to change",
+        "upload-change-label": "Släpp en ny bild för att ändra",
         "accessibility-help-label": "Textredigerare",
         "caption": "Undertext",
         "bulletslist": "Punkter",
         "numberslist": "Nummer",
-        "image-position": "Position",
+        "image-position": "Bildposition",
         "none": "Ingen",
         "left": "Vänster",
         "right": "Höger",
         "center": "Centrerad",
         "undo": "Ångra",
         "redo": "Gör om",
+
+        /* Alignment plugin */
+        "align": "Justera",
+        "align-left": "Vänsterjustera",
+        "align-center": "Mittenjustera",
+        "align-right": "Högerjustera",
+        "align-justify": "Marginaljustera",
+
+        /* Clips plugin */
+        "clips": "Klipp",
+        "clips-select": "Välj ett klipp",
+
+        /* Counter plugin */
+        "words": "ord",
+        "chars": "tecken",
+
+        /* Filemanager/Imagemanager plugin */
+        "choose": "Välj",
+
+        /* Font color plugin */
+        "fontcolor": "Textfärg",
+        "highlight": "Färgöverstrykning",
+
+        /* Font family plugin */
+        "fontfamily": "Typsnitt",
+        "remove-font-family": "Återställ typsnitt",
+
+        /* Font size plugin */
+        "size": "Storlek",
+        "remove-size": "Återställ textstorlek",
+
+        /* Fullscreen plugin */
+        "fullscreen": "Fullskärm",
+
+        /* Inlinestyle plugin */
+        "style": "Stil",
+        "marked": "Markerad",
+        "shortcut": "Genväg",
+
+        /* Properties plugin */
+        "properties": "Egenskaper",
+        "id": "ID",
+        "classname": "Klass",
+
+        /* Specialchars plugin */
+        "specialchars": "Specialtecken",
 
         /* Table plugin */
         "table": "Tabell",
@@ -74,34 +120,22 @@
         "delete-row": "Ta bort rad",
         "delete-table": "Ta bort tabell",
 
-        /* Fullscreen plugin */
-        "fullscreen": "Fullskärm",
+        /* Textdirection plugin */
+        "change-text-direction": "Textriktning",
+        "left-to-right": "Vänster till höger",
+        "right-to-left": "Höger till vänster",
 
-        /* Font color plugin */
-        "fontcolor": "Textfärg",
-        "highlight": "Färgöverstrykning",
+        /* Variable plugin */
+        "change": "Ändra",
+        "variable": "Variabel",
+        "variable-select": "Välj en variabel",
 
-        /* Font family plugin */
-        "fontfamily": "Typsnitt",
-        "remove-font-family": "Återställ typsnitt",
-
-        /* Font size plugin */
-        "size": "Storlek",
-        "remove-size":  "Återställ textstorlek",
-
-        /* Imagemanager/Filemanager plugin */
-        "choose": "Välj",
-
-        /* Alignment plugin */
-        "align": "Justera",
-    	"align-left": "Vänsterjustera",
-    	"align-center": "Mittenjustera",
-    	"align-right": "Högerjustera",
-    	"align-justify": "Marginaljustera",
-            
         /* Video plugin */
         "video": "Video",
-        "video-html-code": "Inbäddningslänk eller Youtube/Vimeo länk"
-   
+        "video-html-code": "Inbäddningslänk eller Youtube/Vimeo länk",
+
+        /* Widget plugin */
+        "widget": "Widget",
+        "widget-html-code": "Widget HTML-kod"
     };
 })(Redactor);

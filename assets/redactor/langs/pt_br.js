@@ -4,19 +4,19 @@
         "format": "Formato",
         "image": "Imagem",
         "file": "Arquivo",
-        "link": "Link",
+        "link": "Hiperlink",
         "bold": "Negrito",
         "italic": "Itálico",
         "deleted": "Tachado",
         "underline": "Sublinhado",
-        "superscript": "Superscript",
-        "subscript": "Subscript",
+        "superscript": "Sobrescrito",
+        "subscript": "Subscrito",
         "bold-abbr": "N",
-        "italic-abbr": "I",
+        "italic-abbr": "It",
         "deleted-abbr": "T",
         "underline-abbr": "S",
-        "superscript-abbr": "Sup",
-        "subscript-abbr": "Sub",
+        "superscript-abbr": "Sob.",
+        "subscript-abbr": "Sub.",
         "lists": "Listas",
         "link-insert": "Inserir link",
         "link-edit": "Editar link",
@@ -33,12 +33,12 @@
         "paragraph": "Texto normal",
         "quote": "Citação",
         "code": "Código",
-        "header1": "Cabeçalho 1",
-        "header2": "Cabeçalho 2",
-        "header3": "Cabeçalho 3",
-        "header4": "Cabeçalho 4",
-        "header5": "Cabeçalho 5",
-        "header6": "Cabeçalho 6",
+        "heading1": "Cabeçalho 1",
+        "heading2": "Cabeçalho 2",
+        "heading3": "Cabeçalho 3",
+        "heading4": "Cabeçalho 4",
+        "heading5": "Cabeçalho 5",
+        "heading6": "Cabeçalho 6",
         "filename": "Nome",
         "optional": "Opcional",
         "unorderedlist": "Lista não ordenada",
@@ -60,6 +60,54 @@
         "center": "Centro",
         "undo": "Desfazer",
         "redo": "Refazer",
+
+        /* Alignment plugin */
+        "align": "Alinhar",
+        "align-left": "Alinhar à esquerda",
+        "align-center": "Alinhar ao centro",
+        "align-right": "Alinhar à direita",
+        "align-justify": "Alinhar justificado",
+
+        /* Clips plugin */
+        "clips": "Clipes",
+        "clips-select": "Por favor, selecione um clipe",
+
+        /* Counter plugin */
+        "words": "Palavras",
+        "chars": "Caracteres",
+
+        /* Filemanager/Imagemanager plugin */
+        "choose": "Escolher",
+
+        /* Font color plugin */
+        "fontcolor": "Cor do texto",
+        "highlight": "Destaque",
+
+        /* Font family plugin */
+        "fontfamily": "Fonte",
+        "remove-font-family": "Remover fonte",
+
+        /* Font size plugin */
+        "size": "Tamanho",
+        "remove-size": "Remover tamanho da fonte",
+
+        /* Fullscreen plugin */
+        "fullscreen": "Tela cheia",
+
+        /* Inlinestyle plugin */
+        "style": "Estilo",
+        "marked": "Marcado",
+        "shortcut": "Atalho",
+
+        /* Properties plugin */
+        "properties": "Propriedades",
+        "id": "ID",
+        "classname": "Classe",
+
+        /* Specialchars plugin */
+        "specialchars": "Caracteres especiais",
+
+        /* Table plugin */
         "table": "Tabela",
         "insert-table": "Inserir tabela",
         "insert-row-above": "Inserir linha à acima",
@@ -71,33 +119,22 @@
         "delete-column": "Remover coluna",
         "delete-row": "Remover linha",
         "delete-table": "Remover tabela",
-        "fontcolor": "Cor do texto",
-        "text": "Texto",
-        "highlight": "Destaque",
-        "fontfamily": "Fonte",
-        "remove-font-family":  "Remover fonte",
-        "choose": "Escolher",
-        "size": "Tamanho",
-        "remove-size":  "Remover tamanho da fonte",
-        "fullscreen": "Tela cheia",
-        "align": "Alinhar",
-        "align-left": "Alinhar à esquerda",
-        "align-center": "Alinhar ao centro",
-        "align-right": "Alinhar à direita",
-        "align-justify": "Alinhar justificado",
-        "words": "Palavras",
-        "chars": "Caracteres",
-        "style": "Estilo",
-        "properties": "Propriedades",
-        "specialchars": "Caracteres especiais",
+
+        /* Textdirection plugin */
         "change-text-direction": "Direção do texto",
         "left-to-right": "Esquerda para direita",
         "right-to-left": "Direita para esquerda",
+
+        /* Variable plugin */
         "change": "Trocar",
         "variable": "Variável",
         "variable-select": "Por favor, selecione a variável",
+
+        /* Video plugin */
         "video": "Vídeo",
         "video-html-code": "Código de incorporação de vídeo ou link do YouTube/Vimeo",
+
+        /* Widget plugin */
         "widget": "Widget",
         "widget-html-code": "Código HTML do Widget"
     };

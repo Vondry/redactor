@@ -59,6 +59,83 @@
         "right": "Right",
         "center": "Center",
         "undo": "Undo",
-        "redo": "Redo"
+        "redo": "Redo",
+
+        /* Alignment plugin */
+        "align": "Align",
+        "align-left": "Align Left",
+        "align-center": "Align Center",
+        "align-right": "Align Right",
+        "align-justify": "Align Justify",
+
+        /* Clips plugin */
+        "clips": "Clips",
+        "clips-select": "Please, select a clip",
+
+        /* Counter plugin */
+        "words": "words",
+        "chars": "chars",
+
+        /* Filemanager/Imagemanager plugin */
+        "choose": "Choose",
+
+        /* Font color plugin */
+        "fontcolor": "Text Color",
+        "highlight": "Highlight",
+
+        /* Font family plugin */
+        "fontfamily": "Font",
+        "remove-font-family": "Remove Font Family",
+
+        /* Font size plugin */
+        "size": "Size",
+        "remove-size": "Remove Font Size",
+
+        /* Fullscreen plugin */
+        "fullscreen": "Fullscreen",
+
+        /* Inlinestyle plugin */
+        "style": "Style",
+        "marked": "Marked",
+        "shortcut": "Shortcut",
+
+        /* Properties plugin */
+        "properties": "Properties",
+        "id": "ID",
+        "classname": "Class",
+
+        /* Specialchars plugin */
+        "specialchars": "Special Characters",
+
+        /* Table plugin */
+        "table": "Table",
+        "insert-table": "Insert table",
+        "insert-row-above": "Insert row above",
+        "insert-row-below": "Insert row below",
+        "insert-column-left": "Insert column left",
+        "insert-column-right": "Insert column right",
+        "add-head": "Add head",
+        "delete-head": "Delete head",
+        "delete-column": "Delete column",
+        "delete-row": "Delete row",
+        "delete-table": "Delete table",
+
+        /* Textdirection plugin */
+        "change-text-direction": "RTL-LTR",
+        "left-to-right": "Left to Right",
+        "right-to-left": "Right to Left",
+
+        /* Variable plugin */
+        "change": "Change",
+        "variable": "Variable",
+        "variable-select": "Please, select a variable",
+
+        /* Video plugin */
+        "video": "Video",
+        "video-html-code": "Video Embed Code or Youtube/Vimeo Link",
+
+        /* Widget plugin */
+        "widget": "Widget",
+        "widget-html-code": "Widget HTML Code"
     };
 })(Redactor);

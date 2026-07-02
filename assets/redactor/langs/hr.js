@@ -1,6 +1,6 @@
 (function($R)
 {
-    $R.lang['en'] = {
+    $R.lang['hr'] = {
         "format": "Oblikovanje",
         "image": "Slika",
         "file": "Datoteka",
@@ -59,6 +59,83 @@
         "right": "Desno",
         "center": "Sredina",
         "undo": "Poništi korak",
-        "redo": "Ponovi korak"
+        "redo": "Ponovi korak",
+
+        /* Alignment plugin */
+        "align": "Poravnaj",
+        "align-left": "Poravnaj lijevo",
+        "align-center": "Poravnaj po sredini",
+        "align-right": "Poravnaj desno",
+        "align-justify": "Poravnaj obostrano",
+
+        /* Clips plugin */
+        "clips": "Isječci",
+        "clips-select": "Odaberite isječak",
+
+        /* Counter plugin */
+        "words": "riječi",
+        "chars": "znakovi",
+
+        /* Filemanager/Imagemanager plugin */
+        "choose": "Odaberi",
+
+        /* Font color plugin */
+        "fontcolor": "Boja teksta",
+        "highlight": "Isticanje",
+
+        /* Font family plugin */
+        "fontfamily": "Font",
+        "remove-font-family": "Ukloni font",
+
+        /* Font size plugin */
+        "size": "Veličina",
+        "remove-size": "Ukloni veličinu fonta",
+
+        /* Fullscreen plugin */
+        "fullscreen": "Cijeli zaslon",
+
+        /* Inlinestyle plugin */
+        "style": "Stil",
+        "marked": "Označeno",
+        "shortcut": "Prečac",
+
+        /* Properties plugin */
+        "properties": "Svojstva",
+        "id": "ID",
+        "classname": "Klasa",
+
+        /* Specialchars plugin */
+        "specialchars": "Posebni znakovi",
+
+        /* Table plugin */
+        "table": "Tablica",
+        "insert-table": "Umetni tablicu",
+        "insert-row-above": "Umetni red iznad",
+        "insert-row-below": "Umetni red ispod",
+        "insert-column-left": "Umetni stupac lijevo",
+        "insert-column-right": "Umetni stupac desno",
+        "add-head": "Dodaj zaglavlje",
+        "delete-head": "Obriši zaglavlje",
+        "delete-column": "Obriši stupac",
+        "delete-row": "Obriši red",
+        "delete-table": "Obriši tablicu",
+
+        /* Textdirection plugin */
+        "change-text-direction": "Smjer teksta",
+        "left-to-right": "S lijeva na desno",
+        "right-to-left": "S desna na lijevo",
+
+        /* Variable plugin */
+        "change": "Promijeni",
+        "variable": "Varijabla",
+        "variable-select": "Odaberite varijablu",
+
+        /* Video plugin */
+        "video": "Video",
+        "video-html-code": "Kod za ugradnju videa ili YouTube/Vimeo poveznica",
+
+        /* Widget plugin */
+        "widget": "Widget",
+        "widget-html-code": "HTML kod widgeta"
     };
 })(Redactor);

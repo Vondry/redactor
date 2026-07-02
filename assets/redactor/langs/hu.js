@@ -15,8 +15,8 @@
         "italic-abbr": "D",
         "deleted-abbr": "H",
         "underline-abbr": "A",
-        "superscript-abbr": "Sup",
-        "subscript-abbr": "Sub",
+        "superscript-abbr": "Felső",
+        "subscript-abbr": "Alsó",
         "lists": "Listák",
         "link-insert": "Hivatkozás beszúrása",
         "link-edit": "Hivatkozás módosítása",
@@ -48,7 +48,7 @@
         "horizontalrule": "Vonal",
         "upload": "Feltöltés",
         "upload-label": "Át a fájlokat vagy kattintson ide, hogy kiválassza",
-        "upload-change-label": "Drop a new image to change",
+        "upload-change-label": "Húzzon ide egy új képet a cseréhez",
         "accessibility-help-label": "Szövegszerkesztő",
         "caption": "Felirat",
         "bulletslist": "Golyók",
@@ -59,6 +59,83 @@
         "right": "Jobb",
         "center": "Középre",
         "undo": "Kibont",
-        "redo": "Újra"
+        "redo": "Újra",
+
+        /* Alignment plugin */
+        "align": "Igazítás",
+        "align-left": "Balra igazítás",
+        "align-center": "Középre igazítás",
+        "align-right": "Jobbra igazítás",
+        "align-justify": "Sorkizárt igazítás",
+
+        /* Clips plugin */
+        "clips": "Klipek",
+        "clips-select": "Válasszon ki egy klipet",
+
+        /* Counter plugin */
+        "words": "szavak",
+        "chars": "karakterek",
+
+        /* Filemanager/Imagemanager plugin */
+        "choose": "Választás",
+
+        /* Font color plugin */
+        "fontcolor": "Szövegszín",
+        "highlight": "Kiemelés",
+
+        /* Font family plugin */
+        "fontfamily": "Betűtípus",
+        "remove-font-family": "Betűtípus eltávolítása",
+
+        /* Font size plugin */
+        "size": "Méret",
+        "remove-size": "Betűméret eltávolítása",
+
+        /* Fullscreen plugin */
+        "fullscreen": "Teljes képernyő",
+
+        /* Inlinestyle plugin */
+        "style": "Stílus",
+        "marked": "Kiemelt",
+        "shortcut": "Gyorsbillentyű",
+
+        /* Properties plugin */
+        "properties": "Tulajdonságok",
+        "id": "Azonosító",
+        "classname": "Osztály",
+
+        /* Specialchars plugin */
+        "specialchars": "Speciális karakterek",
+
+        /* Table plugin */
+        "table": "Táblázat",
+        "insert-table": "Táblázat beszúrása",
+        "insert-row-above": "Sor beszúrása fölé",
+        "insert-row-below": "Sor beszúrása alá",
+        "insert-column-left": "Oszlop beszúrása balra",
+        "insert-column-right": "Oszlop beszúrása jobbra",
+        "add-head": "Fejléc hozzáadása",
+        "delete-head": "Fejléc törlése",
+        "delete-column": "Oszlop törlése",
+        "delete-row": "Sor törlése",
+        "delete-table": "Táblázat törlése",
+
+        /* Textdirection plugin */
+        "change-text-direction": "Szöveg iránya",
+        "left-to-right": "Balról jobbra",
+        "right-to-left": "Jobbról balra",
+
+        /* Variable plugin */
+        "change": "Módosítás",
+        "variable": "Változó",
+        "variable-select": "Válasszon ki egy változót",
+
+        /* Video plugin */
+        "video": "Videó",
+        "video-html-code": "Videó beágyazási kód vagy YouTube/Vimeo hivatkozás",
+
+        /* Widget plugin */
+        "widget": "Widget",
+        "widget-html-code": "Widget HTML-kód"
     };
 })(Redactor);
