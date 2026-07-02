@@ -35,7 +35,9 @@ class RedactorConfig
         private readonly Query $query,
         private readonly CacheInterface $cache,
         private readonly Security $security,
-        private readonly RequestStack $requestStack
+        private readonly RequestStack $requestStack,
+        private readonly string $projectDir,
+        private readonly string $publicFolder
     ) {
     }
 
@@ -224,14 +226,30 @@ class RedactorConfig
     /**
      * The locale to use for the editor UI. Uses the current request locale, which
      * Bolt resolves per user in the backend (LocaleSubscriber sets it from the
-     * user's `_backend_locale`). Falls back to English when there is no request
-     * (e.g. CLI / cache warmup).
+     * user's `_backend_locale`).
+     *
+     * Falls back to English when there is no request (e.g. CLI / cache warmup) or
+     * when we ship no matching langs/<code>.js. The fallback keeps `lang` in sync
+     * with the file that redactor_includes() actually loads, so the config can
+     * never point at a language table that was never loaded.
      */
     private function resolveLocale(): string
     {
         $request = $this->requestStack->getCurrentRequest();
+        $locale = $request?->getLocale() ?: 'en';
 
-        return $request?->getLocale() ?: 'en';
+        return $this->hasLangFile($locale) ? $locale : 'en';
+    }
+
+    private function hasLangFile(string $locale): bool
+    {
+        if ($locale === '') {
+            return false;
+        }
+
+        $path = sprintf('%s/%s/assets/redactor/langs/%s.js', $this->projectDir, $this->publicFolder, $locale);
+
+        return is_file($path);
     }
 
     private function getExtension(): Extension
