@@ -11,6 +11,7 @@ use Bolt\Storage\Query;
 use Pagerfanta\PagerfantaInterface;
 use RuntimeException;
 use Symfony\Bundle\SecurityBundle\Security;
+use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Security\Csrf\CsrfTokenManagerInterface;
 use Symfony\Contracts\Cache\CacheInterface;
@@ -33,7 +34,8 @@ class RedactorConfig
         private readonly Config $boltConfig,
         private readonly Query $query,
         private readonly CacheInterface $cache,
-        private readonly Security $security
+        private readonly Security $security,
+        private readonly RequestStack $requestStack
     ) {
     }
 
@@ -49,6 +51,12 @@ class RedactorConfig
         $extension = $this->getExtension();
 
         $this->config = array_replace_recursive($this->getDefaults(), $extension->getConfig()['default'], $this->getLinks());
+
+        // The editor UI language always follows the current Bolt backend locale
+        // (resolved per user by Bolt's LocaleSubscriber). It is intentionally not
+        // configurable — set last so any stray `lang:` in config can't freeze it.
+        // The matching langs/<code>.js is auto-loaded by redactor_includes().
+        $this->config['lang'] = $this->resolveLocale();
 
         return $this->config;
     }
@@ -211,6 +219,19 @@ class RedactorConfig
         return [
             'definedlinks' => array_values($links),
         ];
+    }
+
+    /**
+     * The locale to use for the editor UI. Uses the current request locale, which
+     * Bolt resolves per user in the backend (LocaleSubscriber sets it from the
+     * user's `_backend_locale`). Falls back to English when there is no request
+     * (e.g. CLI / cache warmup).
+     */
+    private function resolveLocale(): string
+    {
+        $request = $this->requestStack->getCurrentRequest();
+
+        return $request?->getLocale() ?: 'en';
     }
 
     private function getExtension(): Extension

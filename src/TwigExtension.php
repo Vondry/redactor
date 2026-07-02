@@ -63,6 +63,13 @@ class TwigExtension extends AbstractExtension
             }
         }
 
+        // Then the UI language file matching the resolved locale (see
+        // RedactorConfig::resolveLocale), so the toolbar is localized without the
+        // user having to add it to `includes` manually. English is built into
+        // redactor.min.js, and unsupported locales are skipped (no such file), in
+        // which case Redactor falls back to English on its own.
+        $output .= $this->redactorLangInclude();
+
         // Next, if there are extra inludes configured, we add them here
         $includes = $this->redactorConfig->getConfig()['includes'];
 
@@ -79,6 +86,29 @@ class TwigExtension extends AbstractExtension
         }
 
         return $output;
+    }
+
+    /**
+     * A `<script>` tag for the Redactor UI language file matching the configured
+     * locale, or an empty string when it isn't needed/available (English, or a
+     * locale Redactor ships no translation for).
+     */
+    private function redactorLangInclude(): string
+    {
+        $lang = $this->redactorConfig->getConfig()['lang'] ?? 'en';
+
+        if (! is_string($lang) || $lang === '' || $lang === 'en') {
+            return '';
+        }
+
+        $relative = sprintf('/assets/redactor/langs/%s.js', $lang);
+        $absolute = $this->projectDir . '/' . $this->publicFolder . $relative;
+
+        if (! is_file($absolute)) {
+            return '';
+        }
+
+        return sprintf('<script src="%s"></script>', $relative) . "\n";
     }
 
     private function makePath(string $item): string

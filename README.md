@@ -86,6 +86,20 @@ default:
   pastePlainText: true
 ```
 
+## Language / locale
+
+The editor UI language always follows the current Bolt **backend locale** — each
+user sees the editor in the language they've selected for the Bolt admin, with no
+configuration. The matching Redactor language file
+(`assets/redactor/langs/<code>.js`) is loaded automatically; English is built in,
+and locales Redactor ships no translation for fall back to English.
+
+This is driven solely by the user's Bolt locale and is not overridable via `lang:`.
+
+(Note: some plugins register their toolbar labels in English only; you can top up
+the missing strings by extending `$R.lang['<code>']` from a small script added via
+`includes:`.)
+
 ## Adding custom plugins
 
 If you've written your own plugin for Redactor according to the documentation
