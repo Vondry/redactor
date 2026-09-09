@@ -14,7 +14,7 @@
         "bold-abbr": "粗",
         "italic-abbr": "斜",
         "deleted-abbr": "刪",
-        "underline-abbr": "底線",
+        "underline-abbr": "底",
         "superscript-abbr": "上標",
         "subscript-abbr": "下標",
         "lists": "清單",

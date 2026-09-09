@@ -46,13 +46,13 @@
         "orderedlist": "فهرست مرتب",
         "outdent": "کاهش تورفتگی",
         "indent": "افزایش تورفتگی",
-        "horizontalrule": "خط",
+        "horizontalrule": "خط افقی",
         "upload": "بارگذاری",
         "upload-label": "فایل‌ها را اینجا رها کنید یا برای بارگذاری کلیک کنید",
         "upload-change-label": "برای تغییر، تصویر جدیدی را رها کنید",
         "accessibility-help-label": "ویرایشگر متن غنی",
         "caption": "عنوان تصویر",
-        "bulletslist": "گلوله‌ها",
+        "bulletslist": "نشانه‌ها",
         "numberslist": "شماره‌ها",
         "image-position": "موقعیت",
         "none": "هیچ‌کدام",
@@ -115,8 +115,8 @@
         "insert-row-below": "درج ردیف در پایین",
         "insert-column-left": "درج ستون در چپ",
         "insert-column-right": "درج ستون در راست",
-        "add-head": "افزودن سرستون",
-        "delete-head": "حذف سرستون",
+        "add-head": "افزودن سرصفحه",
+        "delete-head": "حذف سرصفحه",
         "delete-column": "حذف ستون",
         "delete-row": "حذف ردیف",
         "delete-table": "حذف جدول",
@@ -133,7 +133,7 @@
 
         /* Video plugin */
         "video": "ویدئو",
-        "video-html-code": "کد جاسازی ویدئو یا لینک YouTube/Vimeo",
+        "video-html-code": "کد جاسازی ویدئو یا پیوند YouTube/Vimeo",
 
         /* Widget plugin */
         "widget": "ویجت",

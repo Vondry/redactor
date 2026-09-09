@@ -46,7 +46,7 @@
         "orderedlist": "قائمة مرتبة",
         "outdent": "إنقاص المسافة البادئة",
         "indent": "زيادة المسافة البادئة",
-        "horizontalrule": "خط",
+        "horizontalrule": "خط أفقي",
         "upload": "تحميل",
         "upload-label": "أسقط الملفات هنا أو انقر للتحميل",
         "upload-change-label": "أسقط صورة جديدة للتغيير",
@@ -103,7 +103,7 @@
         /* Properties plugin */
         "properties": "خصائص",
         "id": "المعرف",
-        "classname": "الصنف",
+        "classname": "الفئة",
 
         /* Specialchars plugin */
         "specialchars": "أحرف خاصة",
@@ -113,10 +113,10 @@
         "insert-table": "إدراج جدول",
         "insert-row-above": "إدراج صف أعلى",
         "insert-row-below": "إدراج صف أسفل",
-        "insert-column-left": "إدراج عمود يساراً",
-        "insert-column-right": "إدراج عمود يميناً",
-        "add-head": "إضافة رأس",
-        "delete-head": "حذف الرأس",
+        "insert-column-left": "إدراج عمود إلى اليسار",
+        "insert-column-right": "إدراج عمود إلى اليمين",
+        "add-head": "إضافة رأس الجدول",
+        "delete-head": "حذف رأس الجدول",
         "delete-column": "حذف العمود",
         "delete-row": "حذف الصف",
         "delete-table": "حذف الجدول",

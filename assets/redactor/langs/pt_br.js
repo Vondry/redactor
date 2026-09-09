@@ -4,7 +4,7 @@
         "format": "Formato",
         "image": "Imagem",
         "file": "Arquivo",
-        "link": "Hiperlink",
+        "link": "Link",
         "bold": "Negrito",
         "italic": "Itálico",
         "deleted": "Tachado",
@@ -12,11 +12,11 @@
         "superscript": "Sobrescrito",
         "subscript": "Subscrito",
         "bold-abbr": "N",
-        "italic-abbr": "It",
+        "italic-abbr": "I",
         "deleted-abbr": "T",
         "underline-abbr": "S",
-        "superscript-abbr": "Sob.",
-        "subscript-abbr": "Sub.",
+        "superscript-abbr": "Sob",
+        "subscript-abbr": "Sub",
         "lists": "Listas",
         "link-insert": "Inserir link",
         "link-edit": "Editar link",
@@ -41,19 +41,19 @@
         "heading6": "Cabeçalho 6",
         "small": "Pequeno",
         "filename": "Nome",
-        "optional": "Opcional",
+        "optional": "opcional",
         "unorderedlist": "Lista não ordenada",
         "orderedlist": "Lista ordenada",
         "outdent": "Diminuir recuo",
-        "indent": "Recuar",
+        "indent": "Aumentar recuo",
         "horizontalrule": "Linha",
         "upload": "Enviar",
         "upload-label": "Solte os arquivos aqui ou clique para enviar",
         "upload-change-label": "Solte uma nova imagem para alterar",
-        "accessibility-help-label": "Editor de Rich Text",
-        "caption": "Subtitulo",
-        "bulletslist": "Lista com ponto",
-        "numberslist": "Lista numérica",
+        "accessibility-help-label": "Editor de texto formatado",
+        "caption": "Legenda",
+        "bulletslist": "Marcadores",
+        "numberslist": "Numeração",
         "image-position": "Posição",
         "none": "Nenhum",
         "left": "Esquerda",
@@ -74,8 +74,8 @@
         "clips-select": "Por favor, selecione um clipe",
 
         /* Counter plugin */
-        "words": "Palavras",
-        "chars": "Caracteres",
+        "words": "palavras",
+        "chars": "caracteres",
 
         /* Filemanager/Imagemanager plugin */
         "choose": "Escolher",
@@ -111,8 +111,8 @@
         /* Table plugin */
         "table": "Tabela",
         "insert-table": "Inserir tabela",
-        "insert-row-above": "Inserir linha à acima",
-        "insert-row-below": "Inserir linha à abaixo",
+        "insert-row-above": "Inserir linha acima",
+        "insert-row-below": "Inserir linha abaixo",
         "insert-column-left": "Inserir coluna à esquerda",
         "insert-column-right": "Inserir coluna à direita",
         "add-head": "Adicionar cabeçalho",
@@ -127,9 +127,9 @@
         "right-to-left": "Direita para esquerda",
 
         /* Variable plugin */
-        "change": "Trocar",
+        "change": "Alterar",
         "variable": "Variável",
-        "variable-select": "Por favor, selecione a variável",
+        "variable-select": "Por favor, selecione uma variável",
 
         /* Video plugin */
         "video": "Vídeo",
@@ -137,6 +137,6 @@
 
         /* Widget plugin */
         "widget": "Widget",
-        "widget-html-code": "Código HTML do Widget"
+        "widget-html-code": "Código HTML do widget"
     };
 })(Redactor);

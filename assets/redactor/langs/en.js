@@ -71,7 +71,7 @@
 
         /* Clips plugin */
         "clips": "Clips",
-        "clips-select": "Please, select a clip",
+        "clips-select": "Please select a clip",
 
         /* Counter plugin */
         "words": "words",
@@ -129,11 +129,11 @@
         /* Variable plugin */
         "change": "Change",
         "variable": "Variable",
-        "variable-select": "Please, select a variable",
+        "variable-select": "Please select a variable",
 
         /* Video plugin */
         "video": "Video",
-        "video-html-code": "Video Embed Code or Youtube/Vimeo Link",
+        "video-html-code": "Video Embed Code or YouTube/Vimeo Link",
 
         /* Widget plugin */
         "widget": "Widget",

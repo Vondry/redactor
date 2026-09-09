@@ -4,7 +4,7 @@
         "format": "Formatierung",
         "image": "Bild",
         "file": "Datei",
-        "link": "Verknüpfung",
+        "link": "Link",
         "bold": "Fett",
         "italic": "Kursiv",
         "deleted": "Durchgestrichen",
@@ -14,10 +14,10 @@
         "bold-abbr": "F",
         "italic-abbr": "K",
         "deleted-abbr": "D",
-        "underline-abbr": "U.",
+        "underline-abbr": "U",
         "superscript-abbr": "Hoch",
         "subscript-abbr": "Tief",
-        "lists": "Liste",
+        "lists": "Listen",
         "link-insert": "Link einfügen",
         "link-edit": "Link bearbeiten",
         "link-in-new-tab": "Link in neuem Tab öffnen",
@@ -27,7 +27,7 @@
         "insert": "Einfügen",
         "save": "Speichern",
         "delete": "Löschen",
-        "text": "Textinhalt",
+        "text": "Text",
         "edit": "Bearbeiten",
         "title": "Titel",
         "paragraph": "Normaler Text",
@@ -41,15 +41,15 @@
         "heading6": "Überschrift 6",
         "small": "Klein",
         "filename": "Dateiname",
-        "optional": "Optional",
+        "optional": "optional",
         "unorderedlist": "Aufzählung",
         "orderedlist": "Nummerierung",
         "outdent": "Einzug verkleinern",
         "indent": "Einzug vergrößern",
         "horizontalrule": "Linie",
         "upload": "Hochladen",
-        "upload-label": "Bilder hier ablegen oder für Upload klicken",
-        "upload-change-label": "Neues Bild hier ablegen",
+        "upload-label": "Dateien hier ablegen oder zum Hochladen klicken",
+        "upload-change-label": "Neues Bild hier ablegen, um es zu ersetzen",
         "accessibility-help-label": "Rich-Text-Editor",
         "caption": "Beschriftung",
         "bulletslist": "Aufzählung",
@@ -67,7 +67,7 @@
         "align-left": "Text links ausrichten",
         "align-center": "Text zentrieren",
         "align-right": "Text rechts ausrichten",
-        "align-justify": "Text ausrichten",
+        "align-justify": "Blocksatz",
 
         /* Clips plugin */
         "clips": "Clips",
@@ -82,15 +82,15 @@
 
         /* Font color plugin */
         "fontcolor": "Schriftfarbe",
-        "highlight": "Hintergrundsfarbe",
+        "highlight": "Hintergrundfarbe",
 
         /* Font family plugin */
-        "fontfamily": "Schriftfamilie",
-        "remove-font-family": "Schriftart zurücksetzen",
+        "fontfamily": "Schriftart",
+        "remove-font-family": "Schriftart entfernen",
 
         /* Font size plugin */
-        "size": "Schriftgrösse",
-        "remove-size": "Textgröße zurücksetzen",
+        "size": "Schriftgröße",
+        "remove-size": "Schriftgröße entfernen",
 
         /* Fullscreen plugin */
         "fullscreen": "Vollbildanzeige",
@@ -111,12 +111,12 @@
         /* Table plugin */
         "table": "Tabelle",
         "insert-table": "Tabelle einfügen",
-        "insert-row-above": "Zeile oberhalb hinzufügen",
-        "insert-row-below": "Zeile unterhalb hinzufügen",
+        "insert-row-above": "Zeile oberhalb einfügen",
+        "insert-row-below": "Zeile unterhalb einfügen",
         "insert-column-left": "Spalte links einfügen",
         "insert-column-right": "Spalte rechts einfügen",
-        "add-head": "Tabellenrubrik einfügen",
-        "delete-head": "Tabellenrubrik löschen",
+        "add-head": "Kopfzeile hinzufügen",
+        "delete-head": "Kopfzeile löschen",
         "delete-column": "Spalte löschen",
         "delete-row": "Zeile löschen",
         "delete-table": "Tabelle löschen",
@@ -133,7 +133,7 @@
 
         /* Video plugin */
         "video": "Video",
-        "video-html-code": "Video von Youtube oder Vimeo einbetten",
+        "video-html-code": "Video-Einbettungscode oder YouTube-/Vimeo-Link",
 
         /* Widget plugin */
         "widget": "Widget",

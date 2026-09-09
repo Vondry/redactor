@@ -4,13 +4,13 @@
         "format": "Formatare",
         "image": "Imagine",
         "file": "Fișier",
-        "link": "Legătură",
+        "link": "Link",
         "bold": "Aldin",
         "italic": "Cursiv",
-        "deleted": "Tăiere cu o linie",
-        "underline": "Subliniere",
-        "superscript": "Exponent",
-        "subscript": "Indice",
+        "deleted": "Tăiat",
+        "underline": "Subliniat",
+        "superscript": "Suprascris",
+        "subscript": "Subscris",
         "bold-abbr": "A",
         "italic-abbr": "C",
         "deleted-abbr": "T",
@@ -21,13 +21,13 @@
         "link-insert": "Inserare link",
         "link-edit": "Editare link",
         "link-in-new-tab": "Deschidere link în filă nouă",
-        "unlink": "Anulare link",
+        "unlink": "Eliminare link",
         "cancel": "Revocare",
         "close": "Închidere",
         "insert": "Inserare",
         "save": "Salvare",
         "delete": "Ștergere",
-        "text": "Conținut text",
+        "text": "Text",
         "edit": "Editare",
         "title": "Titlu",
         "paragraph": "Text normal",
@@ -44,18 +44,18 @@
         "optional": "opțional",
         "unorderedlist": "Listă neordonată",
         "orderedlist": "Listă ordonată",
-        "outdent": "Indentare negativă",
-        "indent": "Indentare",
+        "outdent": "Micșorare indent",
+        "indent": "Mărire indent",
         "horizontalrule": "Linie",
         "upload": "Încărcare",
-        "upload-label": "Fixați fișierele aici sau faceți clic pentru a le încărca",
-        "upload-change-label": "Fixați o nouă imagine pentru a schimba",
+        "upload-label": "Trageți fișierele aici sau faceți clic pentru a le încărca",
+        "upload-change-label": "Trageți o imagine nouă pentru a o înlocui",
         "accessibility-help-label": "Editor de text îmbogățit",
         "caption": "Legendă",
         "bulletslist": "Marcatori",
         "numberslist": "Numere",
         "image-position": "Poziție",
-        "none": "Niciuna/niciunul",
+        "none": "Fără",
         "left": "Stânga",
         "right": "Dreapta",
         "center": "Centru",
@@ -64,10 +64,10 @@
 
         /* Alignment plugin */
         "align": "Aliniere",
-        "align-left": "Aliniază la stânga",
-        "align-center": "Aliniază la centru",
-        "align-right": "Aliniază la dreapta",
-        "align-justify": "Aliniază justificat",
+        "align-left": "Aliniere la stânga",
+        "align-center": "Aliniere la centru",
+        "align-right": "Aliniere la dreapta",
+        "align-justify": "Aliniere stânga-dreapta",
 
         /* Clips plugin */
         "clips": "Fragmente",
@@ -86,11 +86,11 @@
 
         /* Font family plugin */
         "fontfamily": "Font",
-        "remove-font-family": "Elimină fontul",
+        "remove-font-family": "Eliminare font",
 
         /* Font size plugin */
         "size": "Dimensiune",
-        "remove-size": "Elimină dimensiunea fontului",
+        "remove-size": "Eliminare dimensiune font",
 
         /* Fullscreen plugin */
         "fullscreen": "Ecran complet",
@@ -98,7 +98,7 @@
         /* Inlinestyle plugin */
         "style": "Stil",
         "marked": "Marcat",
-        "shortcut": "Scurtătură",
+        "shortcut": "Comandă rapidă",
 
         /* Properties plugin */
         "properties": "Proprietăți",
@@ -110,16 +110,16 @@
 
         /* Table plugin */
         "table": "Tabel",
-        "insert-table": "Inserează tabel",
-        "insert-row-above": "Inserează rând deasupra",
-        "insert-row-below": "Inserează rând dedesubt",
-        "insert-column-left": "Inserează coloană la stânga",
-        "insert-column-right": "Inserează coloană la dreapta",
-        "add-head": "Adaugă antet",
-        "delete-head": "Șterge antetul",
-        "delete-column": "Șterge coloana",
-        "delete-row": "Șterge rândul",
-        "delete-table": "Șterge tabelul",
+        "insert-table": "Inserare tabel",
+        "insert-row-above": "Inserare rând deasupra",
+        "insert-row-below": "Inserare rând dedesubt",
+        "insert-column-left": "Inserare coloană la stânga",
+        "insert-column-right": "Inserare coloană la dreapta",
+        "add-head": "Adăugare antet",
+        "delete-head": "Ștergere antet",
+        "delete-column": "Ștergere coloană",
+        "delete-row": "Ștergere rând",
+        "delete-table": "Ștergere tabel",
 
         /* Textdirection plugin */
         "change-text-direction": "Direcția textului",

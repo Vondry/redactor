@@ -29,7 +29,7 @@
         "delete": "Obriši",
         "text": "Tekst",
         "edit": "Uredi",
-        "title": "Naslov",
+        "title": "Naziv",
         "paragraph": "Obični tekst",
         "quote": "Citat",
         "code": "Kod",
@@ -44,13 +44,13 @@
         "optional": "opcionalno",
         "unorderedlist": "Lista s oznakama",
         "orderedlist": "Numerirana lista",
-        "outdent": "Izvučenost",
-        "indent": "Uvučenost",
-        "horizontalrule": "Redak",
+        "outdent": "Smanji uvlaku",
+        "indent": "Povećaj uvlaku",
+        "horizontalrule": "Crta",
         "upload": "Učitaj",
         "upload-label": "Povuci datoteke ovdje ili klikni za učitavanje",
         "upload-change-label": "Povuci ovdje novu sliku kako bi se promijenila",
-        "accessibility-help-label": "Rich text uređivanje",
+        "accessibility-help-label": "Uređivač obogaćenog teksta",
         "caption": "Natpis",
         "bulletslist": "Natuknice",
         "numberslist": "Brojevi",
@@ -123,8 +123,8 @@
 
         /* Textdirection plugin */
         "change-text-direction": "Smjer teksta",
-        "left-to-right": "S lijeva na desno",
-        "right-to-left": "S desna na lijevo",
+        "left-to-right": "Slijeva nadesno",
+        "right-to-left": "Zdesna nalijevo",
 
         /* Variable plugin */
         "change": "Promijeni",
