@@ -76,11 +76,7 @@ class TwigExtension extends AbstractExtension
         // user having to add it to `includes` manually. This includes English:
         // redactor.min.js ships a built-in `en` table, but langs/en.js overrides it
         // with our normalized set (e.g. the `small` format label), so we load it too.
-        $locale = $this->resolveLocale();
-
-        if ($this->hasLangFile($locale)) {
-            $output .= sprintf('<script src="%s"></script>', $this->langFilePath($locale)) . "\n";
-        }
+        $output .= sprintf('<script src="%s"></script>', $this->langFilePath($this->resolveLocale())) . "\n";
 
         // Next, if there are extra inludes configured, we add them here
         $includes = $this->redactorConfig->getConfig()['includes'];
@@ -111,8 +107,9 @@ class TwigExtension extends AbstractExtension
      * by its bare language code (`de_AT` -> `de`).
      *
      * Falls back to English when there is no request (e.g. CLI / cache warmup) or
-     * when we ship no matching langs/<code>.js, so `lang` in the settings always
-     * names a language table that redactor_includes() actually loaded.
+     * when we ship no matching langs/<code>.js. This is the only file existence
+     * check: the result always names a shipped file, so redactor_includes() can
+     * load it as is, and `lang` in the settings names the table it loaded.
      */
     private function resolveLocale(): string
     {
