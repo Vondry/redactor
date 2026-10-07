@@ -7,6 +7,7 @@ namespace Bolt\Redactor;
 use Bolt\Common\Json;
 use Bolt\Configuration\Config;
 use Symfony\Component\Filesystem\Path;
+use Symfony\Component\HttpFoundation\RequestStack;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
 
@@ -15,6 +16,7 @@ class TwigExtension extends AbstractExtension
     public function __construct(
         private readonly RedactorConfig $redactorConfig,
         private readonly Config $boltConfig,
+        private readonly RequestStack $requestStack,
         private readonly string $projectDir,
         private readonly string $publicFolder,
     ) {
@@ -35,6 +37,12 @@ class TwigExtension extends AbstractExtension
     public function redactorSettings(): string
     {
         $settings = $this->redactorConfig->getConfig();
+
+        // The editor UI language always follows the current Bolt backend locale
+        // (resolved per user by Bolt's LocaleSubscriber). It is intentionally not
+        // configurable — set last so any stray `lang:` in config can't freeze it.
+        // The matching langs/<code>.js is loaded by redactor_includes().
+        $settings['lang'] = $this->resolveLocale();
 
         return Json::json_encode($settings, JSON_HEX_QUOT | JSON_HEX_APOS | JSON_PRETTY_PRINT);
     }
@@ -64,13 +72,15 @@ class TwigExtension extends AbstractExtension
         }
 
         // Then the UI language file matching the resolved locale (see
-        // RedactorConfig::resolveLocale), so the toolbar is localized without the
+        // resolveLocale()), so the toolbar is localized without the
         // user having to add it to `includes` manually. This includes English:
         // redactor.min.js ships a built-in `en` table, but langs/en.js overrides it
         // with our normalized set (e.g. the `small` format label), so we load it too.
-        // Unsupported locales are skipped (no such file), in which case Redactor
-        // falls back to its built-in English on its own.
-        $output .= $this->redactorLangInclude();
+        $locale = $this->resolveLocale();
+
+        if ($this->hasLangFile($locale)) {
+            $output .= sprintf('<script src="%s"></script>', $this->langFilePath($locale)) . "\n";
+        }
 
         // Next, if there are extra inludes configured, we add them here
         $includes = $this->redactorConfig->getConfig()['includes'];
@@ -91,27 +101,46 @@ class TwigExtension extends AbstractExtension
     }
 
     /**
-     * A `<script>` tag for the Redactor UI language file matching the configured
-     * locale, or an empty string when it isn't available (a locale we ship no
-     * translation file for). English is included on purpose: langs/en.js overrides
-     * redactor.min.js' built-in `en` table with our normalized labels.
+     * The locale to use for the editor UI. Uses the current request locale, which
+     * Bolt resolves per user in the backend (LocaleSubscriber sets it from the
+     * user's `_backend_locale`).
+     *
+     * Bolt locales look like `pt_BR` / `zh-CN`, while the shipped language files
+     * (and the `$R.lang[...]` keys inside them) are lowercase with an underscore,
+     * e.g. `pt_br`. So the locale is normalized first, then matched exactly, then
+     * by its bare language code (`de_AT` -> `de`).
+     *
+     * Falls back to English when there is no request (e.g. CLI / cache warmup) or
+     * when we ship no matching langs/<code>.js, so `lang` in the settings always
+     * names a language table that redactor_includes() actually loaded.
      */
-    private function redactorLangInclude(): string
+    private function resolveLocale(): string
     {
-        $lang = $this->redactorConfig->getConfig()['lang'] ?? 'en';
+        $locale = $this->requestStack->getCurrentRequest()?->getLocale() ?? '';
+        $locale = mb_strtolower(str_replace('-', '_', $locale));
 
-        if (! is_string($lang) || $lang === '') {
-            return '';
+        foreach ([$locale, mb_strstr($locale, '_', true)] as $candidate) {
+            if (is_string($candidate) && $this->hasLangFile($candidate)) {
+                return $candidate;
+            }
         }
 
-        $relative = sprintf('/assets/redactor/langs/%s.js', $lang);
-        $absolute = $this->projectDir . '/' . $this->publicFolder . $relative;
+        return 'en';
+    }
 
-        if (! is_file($absolute)) {
-            return '';
+    private function hasLangFile(string $locale): bool
+    {
+        // Only plain locale codes, so the request locale can never form an arbitrary path
+        if (! preg_match('/^[a-z]{2,3}(_[a-z0-9]+)?$/', $locale)) {
+            return false;
         }
 
-        return sprintf('<script src="%s"></script>', $relative) . "\n";
+        return is_file($this->projectDir . '/' . $this->publicFolder . $this->langFilePath($locale));
+    }
+
+    private function langFilePath(string $locale): string
+    {
+        return sprintf('/assets/redactor/langs/%s.js', $locale);
     }
 
     private function makePath(string $item): string

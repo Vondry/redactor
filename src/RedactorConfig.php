@@ -11,7 +11,6 @@ use Bolt\Storage\Query;
 use Pagerfanta\PagerfantaInterface;
 use RuntimeException;
 use Symfony\Bundle\SecurityBundle\Security;
-use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Security\Csrf\CsrfTokenManagerInterface;
 use Symfony\Contracts\Cache\CacheInterface;
@@ -34,10 +33,7 @@ class RedactorConfig
         private readonly Config $boltConfig,
         private readonly Query $query,
         private readonly CacheInterface $cache,
-        private readonly Security $security,
-        private readonly RequestStack $requestStack,
-        private readonly string $projectDir,
-        private readonly string $publicFolder
+        private readonly Security $security
     ) {
     }
 
@@ -53,12 +49,6 @@ class RedactorConfig
         $extension = $this->getExtension();
 
         $this->config = array_replace_recursive($this->getDefaults(), $extension->getConfig()['default'], $this->getLinks());
-
-        // The editor UI language always follows the current Bolt backend locale
-        // (resolved per user by Bolt's LocaleSubscriber). It is intentionally not
-        // configurable — set last so any stray `lang:` in config can't freeze it.
-        // The matching langs/<code>.js is auto-loaded by redactor_includes().
-        $this->config['lang'] = $this->resolveLocale();
 
         return $this->config;
     }
@@ -221,35 +211,6 @@ class RedactorConfig
         return [
             'definedlinks' => array_values($links),
         ];
-    }
-
-    /**
-     * The locale to use for the editor UI. Uses the current request locale, which
-     * Bolt resolves per user in the backend (LocaleSubscriber sets it from the
-     * user's `_backend_locale`).
-     *
-     * Falls back to English when there is no request (e.g. CLI / cache warmup) or
-     * when we ship no matching langs/<code>.js. The fallback keeps `lang` in sync
-     * with the file that redactor_includes() actually loads, so the config can
-     * never point at a language table that was never loaded.
-     */
-    private function resolveLocale(): string
-    {
-        $request = $this->requestStack->getCurrentRequest();
-        $locale = $request?->getLocale() ?: 'en';
-
-        return $this->hasLangFile($locale) ? $locale : 'en';
-    }
-
-    private function hasLangFile(string $locale): bool
-    {
-        if ($locale === '') {
-            return false;
-        }
-
-        $path = sprintf('%s/%s/assets/redactor/langs/%s.js', $this->projectDir, $this->publicFolder, $locale);
-
-        return is_file($path);
     }
 
     private function getExtension(): Extension

@@ -14,11 +14,6 @@ services:
       $projectDir: '%kernel.project_dir%'
       $publicFolder: '%bolt.public_folder%'
 
-  Bolt\Redactor\RedactorConfig:
-    arguments:
-      $projectDir: '%kernel.project_dir%'
-      $publicFolder: '%bolt.public_folder%'
-
 ### Map entities
 doctrine:
   orm:
