@@ -13,6 +13,8 @@ use Twig\TwigFunction;
 
 class TwigExtension extends AbstractExtension
 {
+    private const LANGS_DIR = 'assets/redactor/langs';
+
     public function __construct(
         private readonly RedactorConfig $redactorConfig,
         private readonly Config $boltConfig,
@@ -128,17 +130,16 @@ class TwigExtension extends AbstractExtension
 
     private function hasLangFile(string $locale): bool
     {
-        // Only plain locale codes, so the request locale can never form an arbitrary path
-        if (! preg_match('/^[a-z]{2,3}(_[a-z0-9]+)?$/', $locale)) {
-            return false;
-        }
+        $langsDir = Path::join($this->projectDir, $this->publicFolder, self::LANGS_DIR);
+        $file = Path::join($langsDir, $locale . '.js');
 
-        return is_file($this->projectDir . '/' . $this->publicFolder . $this->langFilePath($locale));
+        // The locale comes from the request, so it must not reach outside the langs directory
+        return Path::isBasePath($langsDir, $file) && is_file($file);
     }
 
     private function langFilePath(string $locale): string
     {
-        return sprintf('/assets/redactor/langs/%s.js', $locale);
+        return '/' . Path::join(self::LANGS_DIR, $locale . '.js');
     }
 
     private function makePath(string $item): string
