@@ -71,11 +71,12 @@ class TwigExtension extends AbstractExtension
             }
         }
 
-        // Then the UI language file matching the resolved locale (see
-        // resolveLocale()), so the toolbar is localized without the
-        // user having to add it to `includes` manually. This includes English:
-        // redactor.min.js ships a built-in `en` table, but langs/en.js overrides it
-        // with our normalized set (e.g. the `small` format label), so we load it too.
+        // Then the UI language file for the resolved locale (see resolveLocale()),
+        // so the toolbar is localized without the user having to add it to
+        // `includes` manually. Exactly one file is loaded. When the locale resolves
+        // to English (including the fallback), that file is langs/en.js, which
+        // replaces redactor.min.js' built-in `en` table: the built-in one lacks keys
+        // we use, such as the `small` format label.
         $output .= sprintf('<script src="%s"></script>', $this->langFilePath($this->resolveLocale())) . "\n";
 
         // Next, if there are extra inludes configured, we add them here
