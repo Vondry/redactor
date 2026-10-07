@@ -79,7 +79,7 @@ class TwigExtension extends AbstractExtension
         // to English (including the fallback), that file is langs/en.js, which
         // replaces redactor.min.js' built-in `en` table: the built-in one lacks keys
         // we use, such as the `small` format label.
-        $output .= sprintf('<script src="%s"></script>', $this->langFilePath($this->resolveLocale())) . "\n";
+        $output .= sprintf('<script src="%s"></script>', $this->langFilePath($this->resolveLocale()));
 
         // Next, if there are extra inludes configured, we add them here
         $includes = $this->redactorConfig->getConfig()['includes'];
