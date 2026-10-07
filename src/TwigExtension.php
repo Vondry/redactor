@@ -133,8 +133,11 @@ class TwigExtension extends AbstractExtension
         $langsDir = Path::join($this->projectDir, $this->publicFolder, self::LANGS_DIR);
         $file = Path::join($langsDir, $locale . '.js');
 
-        // The locale comes from the request, so it must not reach outside the langs directory
-        return Path::isBasePath($langsDir, $file) && is_file($file);
+        // The locale comes from the request, and Bolt accepts any `?_locale=` value. So it
+        // must be a plain file name (no path segments) that stays inside the langs directory.
+        return Path::isBasePath($langsDir, $file)
+            && Path::getFilenameWithoutExtension($file, '.js') === $locale
+            && is_file($file);
     }
 
     private function langFilePath(string $locale): string
